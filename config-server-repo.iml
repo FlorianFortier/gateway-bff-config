@@ -1,0 +1,19 @@
+spring.application.name=patient
+
+
+# Configuration Tomcat (modification des ports et autres options)
+# Port par defaut de Tomcat, vous pouvez changer si nï¿½cessaire
+server.port=8080
+# Encodage URI utilise par Tomcat
+server.tomcat.uri-encoding=UTF-8
+
+# Utilisez "mongodb", qui est le nom du service dans docker-compose.yml
+spring.data.mongodb.host=${SPRING_DATA_MONGODB_HOST}
+spring.data.mongodb.port=${SPRING_DATA_MONGODB_PORT}
+spring.data.mongodb.database=${SPRING_DATA_MONGODB_DATABASE}
+spring.data.mongodb.username=${SPRING_DATA_MONGODB_USERNAME}
+spring.data.mongodb.password=${SPRING_DATA_MONGODB_PASSWORD}
+spring.data.mongodb.authentication-database=admin
+
+springdoc.swagger-ui.path=/swagger-ui.html
+springdoc.api-docs.path=/api-docs
